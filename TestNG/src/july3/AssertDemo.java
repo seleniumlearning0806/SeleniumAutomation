@@ -8,15 +8,18 @@ import org.testng.annotations.Test;
 public class AssertDemo {
 	
 	static String abc="";
-	WebDriver driver;
+	
 	
 	@Test(priority=1)
 	public static void test() {
+		//This is the Sample Assert Demo
 		String keypath="webdriver.chrome.driver";
-		System.setProperty(keypath, "D:\\Learning\\Drivers\\Chrome\\chromedriver.exe");
+		String sChromeDriverPath="D:\\Learning\\Drivers\\Chrome\\chromedriver.exe";
+		System.setProperty(keypath, sChromeDriverPath);
 		WebDriver driver=new ChromeDriver();
+
 		driver.get("http:www.google.com");
-		System.out.println("google website is launched");
+		System.out.println("google website is opened");
 		driver.manage().window().maximize();
 		String sActualtTitle=driver.getTitle();
 		String ExpectedTitle="Google";
