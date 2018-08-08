@@ -12,10 +12,12 @@ public class AssertDemo {
 	
 	@Test(priority=1)
 	public static void test() {
-		System.setProperty("webdriver.chrome.driver", "D:\\Learning\\Drivers\\Chrome\\chromedriver.exe");
+		// This is the Sample Assert Demo
+		String sChromeDriverPath="D:\\\\Learning\\\\Drivers\\\\Chrome\\\\chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver",sChromeDriverPath );
 		driver=new ChromeDriver();
 		driver.get("http:www.google.com");
-		System.out.println("google website is launched");
+		System.out.println("google website is opened");
 		driver.manage().window().maximize();
 		String sActualtTitle=driver.getTitle();
 		String ExpectedTitle="Google";
