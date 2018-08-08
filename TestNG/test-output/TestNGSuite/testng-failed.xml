@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestNGSuite]" parallel="tests">
+  <test thread-count="5" name="TestNGTest2(failed)" parallel="tests">
+    <parameter name="password" value="mnop"/>
+    <parameter name="Browser" value="chrome"/>
+    <parameter name="username" value="Aaradhya"/>
+    <classes>
+      <class name="june26.ParameterizeDemo">
+        <methods>
+          <include name="OrangeHRMBrowserLaunch"/>
+          <include name="orangeHRMLogin"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- june26.ParameterizeDemo -->
+    </classes>
+  </test> <!-- TestNGTest2(failed) -->
+</suite> <!-- Failed suite [TestNGSuite] -->

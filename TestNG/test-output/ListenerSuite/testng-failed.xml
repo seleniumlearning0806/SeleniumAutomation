@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ListenerSuite]">
+  <listeners>
+    <listener class-name="july8.ListenerDemo"/>
+  </listeners>
+  <test thread-count="5" name="ListenersTest(failed)">
+    <classes>
+      <class name="july8.OrangeHRMLogin">
+        <methods>
+          <include name="logout"/>
+          <include name="AddEmployee"/>
+          <include name="before"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- july8.OrangeHRMLogin -->
+    </classes>
+  </test> <!-- ListenersTest(failed) -->
+</suite> <!-- Failed suite [ListenerSuite] -->
