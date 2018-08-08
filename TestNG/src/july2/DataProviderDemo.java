@@ -4,7 +4,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class DataProviderDemo {
-	
+	//This is a Sample Data Provide Demo class
 	@DataProvider(name="selenium-test")
 	public static Object[][] Demo1(){
 		
