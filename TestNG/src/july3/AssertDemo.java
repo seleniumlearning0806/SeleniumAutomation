@@ -8,11 +8,12 @@ import org.testng.annotations.Test;
 public class AssertDemo {
 	
 	static String abc="";
+	static WebDriver driver;
 	
 	@Test(priority=1)
 	public static void test() {
 		System.setProperty("webdriver.chrome.driver", "D:\\Learning\\Drivers\\Chrome\\chromedriver.exe");
-		WebDriver driver=new ChromeDriver();
+		driver=new ChromeDriver();
 		driver.get("http:www.google.com");
 		System.out.println("google website is launched");
 		driver.manage().window().maximize();
